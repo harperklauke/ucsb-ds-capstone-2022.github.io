@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Data Science Capstone 2022</title>
+    <title>Update 2 &#8212; Data Science Capstone 2022</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -534,7 +534,24 @@ const thebe_selector_output = ".output, .cell_output"
                 <i class="fas fa-list"></i> Contents
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap">
+   Recap
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moving-forward">
+   Moving Forward
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#researching-different-methodologies">
+     Researching Different Methodologies
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -545,7 +562,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Update 2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -554,7 +571,24 @@ const thebe_selector_output = ".output, .cell_output"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recap">
+   Recap
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moving-forward">
+   Moving Forward
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#researching-different-methodologies">
+     Researching Different Methodologies
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
                         </nav>
@@ -564,7 +598,27 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="update-2">
+<h1>Update 2<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="recap">
+<h2>Recap<a class="headerlink" href="#recap" title="Permalink to this headline">¶</a></h2>
+<p>Previously, our data contained bee images with bar scales, a QR/Datamatrix code, and other
+descriptions related to the specimen.
+The first 3-4 weeks consisted of developing Python scripts that can extract EXIF data from an image file  ![MetaData Extractor] link (<a class="reference external" href="https://github.com/harperklauke/Metadata-Extractor">https://github.com/harperklauke/Metadata-Extractor</a>) and renaming the image corresponding to the readings from QR/Datamatrix code <img alt="Universal QR/Datamatrix Rename" src="https://github.com/booleank/bee-scanner" /> .We were able to release these tools as repositories on Github. These repositories are currently being used by two academic institutions. With the initial release, it was pointed out that some requirements may be different on MacOS and Windows so, we made sure to clarify this in the documentation. We hope to address any further issues and clean these tools as they are used throughout the project.</p>
+</div>
+<div class="section" id="moving-forward">
+<h2>Moving Forward<a class="headerlink" href="#moving-forward" title="Permalink to this headline">¶</a></h2>
+<p>Our new focus is related to the bee itself. As such, we will be working with a different image dataset, which contains close-up, high quality images of bees. Our goal is to create different models that can quantify the number of hair on a given bee image.</p>
+<div class="section" id="researching-different-methodologies">
+<h3>Researching Different Methodologies<a class="headerlink" href="#researching-different-methodologies" title="Permalink to this headline">¶</a></h3>
+<p>Upon more research on computer vision tools, we found that there were several approaches that we can take to measure the hairiness of bees using raw 2D and 3D image data. Since our group is relatively new to these concepts, we determined that it was best to consult with professionals before taking any drastic steps in our project. Our team reached out to Prof. Yon Visell, an associate professor at UCSB with research in communications and signal processing. As part of our information gathering stage, we looked into the suggestions provided by Yon Visell, such as treating the problem as a block-based processing, using a convolutional neural-network approach, and quantifying bee hair using density. Since the problem will involve unsupervised learning, we sought to try different methods:</p>
+<p>Approach 1: Using a supervised learning technique, we may be able to train a random forest classifier to return a binary pixel image, with the hair regions being white. This technique was inspired by the paper FIGARO, HAIR DETECTION AND SEGMENTATION IN THE WILD, where a combination of classic machine learning and computer vision techniques were utilized to get desired results for humans. One drawback to this method is we will be required to preprocess a lot of training images manually and design another model for detecting pixels on where the bee actually is.</p>
+<p>Approach 2: Using methodologies presented ![Hairiness: the missing link between pollinators and pollination][<a class="reference external" href="https://peerj.com/articles/2779/">https://peerj.com/articles/2779/</a>], we could try quantifying bee hair using a measure of entropy. The approach is to use an image analysis method to segment the image and compute entropy values for each block.</p>
+<p><img alt="Image credit" src="https://doi.org/10.7717/peerj.2779" /></p>
+</div>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
