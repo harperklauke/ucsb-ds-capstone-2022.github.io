@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="CalCOFI Project" href="../calcofi/description.html" />
+    <link rel="next" title="Creating a Simple Model" href="update2.html" />
     <link rel="prev" title="AppFolio" href="description.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -210,6 +210,11 @@ const thebe_selector_output = ".output, .cell_output"
      Project Update 1 (2/4/2022)
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update2.html">
+     Project Update 2 (3/4/2022)
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -227,6 +232,11 @@ const thebe_selector_output = ".output, .cell_output"
      Starting the Project
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update2.html">
+     Creating a Simple Model
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -242,6 +252,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../calcofi/calcofi-update1.html">
      CalCOFI Initial Progress and Goal Definition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update2.html">
+     Progress Update and Reflection
     </a>
    </li>
   </ul>
@@ -322,6 +337,11 @@ const thebe_selector_output = ".output, .cell_output"
      Survey Pre-Processing
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate2.html">
+     Concise Project Refresher
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -337,6 +357,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../eri/update1.html">
      Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../eri/update2.html">
+     Update 2
     </a>
    </li>
   </ul>
@@ -356,6 +381,11 @@ const thebe_selector_output = ".output, .cell_output"
      Evidation Health Project Update 1
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update2.html">
+     Evidation Health Project Update 2
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -371,6 +401,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../evidation_julio/Update2_4_22.html">
      Evidation Update (Julio’s team)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/Update2.html">
+     Evidation Update #2 (Julio’s Team)
     </a>
    </li>
   </ul>
@@ -412,6 +447,11 @@ const thebe_selector_output = ".output, .cell_output"
      NRI Group Update 1
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update2.html">
+     Team Information
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -429,6 +469,11 @@ const thebe_selector_output = ".output, .cell_output"
      Update 1: Preliminaries
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pwc/Update_2.html">
+     Update 2: First Dive into Compression
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -444,6 +489,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../sprague/Sprague_group_update_01.html">
      Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_02.html">
+     Update 2
     </a>
    </li>
   </ul>
@@ -650,11 +700,6 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="about-the-data">
 <h2>About the Data<a class="headerlink" href="#about-the-data" title="Permalink to this headline">¶</a></h2>
 <p>Our dataset is derived from <a class="reference external" href="https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&amp;sa=D&amp;source=docs&amp;ust=1644542468101327&amp;usg=AOvVaw0I_O2jmUD38PsniHSAt-e_">LISA</a>, Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images. It consists of over four million users, ten thousand properties, and five million user interactions.</p>
-<p>In our ratings data, we have a unique identifier for the property and the user along with the leasing attribution source and the type of interaction. The interaction type can be one of four scenarios; a user can deny a property, inquire about a property, accept a showing for a property, or confirm the showing by making an appearance. We use these interaction types as our response variable to gauge levels of interest in user-property pairs.</p>
-<p><img alt="" src="https://cdn.discordapp.com/attachments/927701734791458819/941495489126350858/Screen_Shot_2022-02-10_at_4.46.47_PM.png" /></p>
-<p>Our “item features” dataset is linked to the user matrix by the user ID. Within this set, we are given 15 unique features that comprise the makeup of a property and can be used to distinguish from other properties. An example of some of these features include property type (single family residence vs. multiple family residence), the number of rentable units, the date that it appears on the market, and the latitude and longitude.</p>
-<p><img alt="" src="https://cdn.discordapp.com/attachments/927701734791458819/941487837692452924/Screen_Shot_2022-02-10_at_4.16.14_PM.png" /></p>
-<p>The final partition of the data is the set of images that correspond to the properties within the other two segments of the data.</p>
 </div>
 <div class="section" id="what-have-we-done-so-far">
 <h2>What have we done so far<a class="headerlink" href="#what-have-we-done-so-far" title="Permalink to this headline">¶</a></h2>
@@ -728,10 +773,10 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">AppFolio</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../calcofi/description.html" title="next page">
+    <a class='right-next' id="next-link" href="update2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CalCOFI Project</p>
+        <p class="prev-next-title">Creating a Simple Model</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
