@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update 3 &#8212; Data Science Capstone 2022</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="evidation (Eric’s team)" href="../evidation_eric/description.html" />
+    <link rel="prev" title="Update 2" href="update2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-186739861-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Science Capstone 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../class/syllabus.html">
+   Course Syllabus
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_readings.html">
+     Readings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_participation.html">
+     Meetings and participation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_deliverables.html">
+     Deliverables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_policies.html">
+     Course policies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/contacts.html">
+   Project sponsors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/software-tools.html">
+   Software and Tools
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../class/progress-update-guidelines.html">
+   Progress update guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-initial-post-guidelines.html">
+     Initial post (due Friday 2/4)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-second-post-guidelines.html">
+     Second post (due Friday 3/4)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-third-post-guidelines.html">
+     Third post (due Friday 4/29)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-posting-instructions.html">
+     How to post project updates
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/presentation-guidelines-winter.html">
+   Interim presentation guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/presentation-guidelines-midquarter-spring.html">
+   Mid-quarter presentations
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../allthenticate/description.html">
+   Allthenticate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update1.html">
+     Project Update 1 (2/4/2022)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update2.html">
+     Project Update 2 (3/4/2022)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update3.html">
+     Project Update 3 (5/2/2022)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../appfolio/description.html">
+   AppFolio
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update1.html">
+     Starting the Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update2.html">
+     Creating a Simple Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update3.html">
+     Implementing Hybrid Models and Image Features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../calcofi/description.html">
+   CalCOFI Project
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update1.html">
+     CalCOFI Initial Progress and Goal Definition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update2.html">
+     Progress Update and Reflection
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update3.html">
+     The Final Stretch
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../carpedata/description.html">
+   carpedata
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update1.html">
+     Update 1 - (2/4/22)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update2.html">
+     Update 2 - (3/4/22)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update3.html">
+     Update 3 - (4/29/22)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ccber/description.html">
+   ccber
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../cits/description.html">
+   cits
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update2.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update3.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../envent/description.html">
+   ENVENT Lab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate1.html">
+     Survey Pre-Processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate2.html">
+     Update 2: Moving Towards Megapoll Assembly
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate3.html">
+     Update 3: Merging Demographics and Exploring Modeling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="description.html">
+   eri
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update2.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../evidation_eric/description.html">
+   evidation (Eric’s team)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update1.html">
+     Evidation Health Project Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update2.html">
+     Evidation Health Project Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update3.html">
+     Evidation Health Project Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../evidation_julio/description.html">
+   Evidation (Julio’s team)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/Update2_4_22.html">
+     Evidation Update (Julio’s team)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/Update2.html">
+     Evidation Update #2 (Julio’s Team)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/update3.html">
+     Evidation Julio Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../hg_insights/description.html">
+   hg_insights
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../hg_insights/HG_Update1_Feb7.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../hg_insights/update%202-2.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../hg_insights/update%203.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../nri/description.html">
+   NRI
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update1.html">
+     NRI Group Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update2.html">
+     Team Information
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update3.html">
+     NRI Group Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../pwc/description.html">
+   PwC
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pwc/Update_1.html">
+     Update 1: Preliminaries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pwc/Update_2.html">
+     Update 2: First Dive into Compression
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../sprague/description.html">
+   sprague
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_01.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_02.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_03.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/projects/eri/update3.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/eri/update3.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/projects/eri/update3.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-combining-computer-vision-and-satellite-imagery-to-map-agricultural-investment-and-water-use">
+   Project: Combining computer vision and satellite imagery to map agricultural investment and water use.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recent-efforts">
+   Recent Efforts
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-augmentation-splitting-and-analysis">
+     Data Augmentation, splitting, and analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#successes-and-challenges">
+   Successes and Challenges
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transfer-learning">
+     Transfer learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-labeling">
+     Data labeling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#json-min-to-tif-mask-from-labelstudio">
+     JSON_MIN to TIF Mask (from LabelStudio)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#looking-forward">
+   Looking forward:
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Update 3</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-combining-computer-vision-and-satellite-imagery-to-map-agricultural-investment-and-water-use">
+   Project: Combining computer vision and satellite imagery to map agricultural investment and water use.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recent-efforts">
+   Recent Efforts
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-augmentation-splitting-and-analysis">
+     Data Augmentation, splitting, and analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#successes-and-challenges">
+   Successes and Challenges
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transfer-learning">
+     Transfer learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-labeling">
+     Data labeling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#json-min-to-tif-mask-from-labelstudio">
+     JSON_MIN to TIF Mask (from LabelStudio)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#looking-forward">
+   Looking forward:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="update-3">
+<h1>Update 3<a class="headerlink" href="#update-3" title="Permalink to this headline">¶</a></h1>
+<p>Mid-Spring Quarter Update</p>
+<hr class="docutils" />
+<div class="section" id="project-combining-computer-vision-and-satellite-imagery-to-map-agricultural-investment-and-water-use">
+<h2>Project: Combining computer vision and satellite imagery to map agricultural investment and water use.<a class="headerlink" href="#project-combining-computer-vision-and-satellite-imagery-to-map-agricultural-investment-and-water-use" title="Permalink to this headline">¶</a></h2>
+</div>
+<hr class="docutils" />
+<div class="section" id="recent-efforts">
+<h2>Recent Efforts<a class="headerlink" href="#recent-efforts" title="Permalink to this headline">¶</a></h2>
+<p>This past quarter, ERI has been focusing on creating our training dataset and developing a pipeline for data augmentation and chipping our images. We shifted towards a transfer learning approach and eventually got in contact with the authors in which they provided their models for us to reference.</p>
+<div class="section" id="data-augmentation-splitting-and-analysis">
+<h3>Data Augmentation, splitting, and analysis<a class="headerlink" href="#data-augmentation-splitting-and-analysis" title="Permalink to this headline">¶</a></h3>
+<p>We split the larger region of center pivots into smaller image sizes (512x512) by using a sliding window over the image. The window specifies chips (512x512 regions in the image and the label) to be saved individually. The window moves by 256 instead of 512, because we want to increase the chances that we have a full center pivot label in a chip. Chips with no center pivot would be discarded. Each of these chips are then rotated (90, 180, 270). Then each of those are flipped (horizontally, vertically) to increase our data by twelve times.</p>
+<p><img alt="raw_chip" src="../../_images/raw_chip.png" />
+<img alt="tiff_chip" src="../../_images/tiff_chip.png" /></p>
+</div>
+</div>
+<div class="section" id="successes-and-challenges">
+<h2>Successes and Challenges<a class="headerlink" href="#successes-and-challenges" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="transfer-learning">
+<h3>Transfer learning<a class="headerlink" href="#transfer-learning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>We found a paper that is very similar to what we wanted to achieve so we adopted a transfer learning mechanism for our project. The paper we are referring to is “Automatic Mapping of Center Pivot Irrigation Systems from Satellite Images Using Deep Learning” (<a class="reference external" href="https://www.mdpi.com/2072-4292/12/3/558/htm">https://www.mdpi.com/2072-4292/12/3/558/htm</a>) and was published on February 7, 2020 by Marciano Saraiva, Églen Protas, Moisés Salgado, and Carlos Souza. The main goal of the paper was to use computer vision to identify center pivots in a certain part of Brazil, which is very similar to our project goal of using computer vision to identify center pivots in general. Because their model is uniquely trained to a certain study area in Brazil, we want to take their model and tweak it so that it can hopefully identify center pivots around the world. We were lucky enough to find their trained model on their GitHub repository and have been messaging Marciano Saraiva on LinkedIn regarding any clarifying questions we have. Unfortunately, some of the challenges we have faced with the transfer learning method have been to try and understand the code since there isn’t a lot of commentary about what the code means. They also have two different trained models, one that uses Google Earth Engine satellite imagery and one that uses Planet satellite imagery, so it’s been difficult to figure out what exactly to change and what formats they are using.</p></li>
+</ul>
+</div>
+<div class="section" id="data-labeling">
+<h3>Data labeling<a class="headerlink" href="#data-labeling" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Originally, our plan for creating the labeled dataset involved splitting the raw image first and then labeling each of the split image tiles. This would have taken a lot of time and effort, as we would have had to label thousands of images individually. Fortunately, we discovered a way to split both the raw image and the labels together. <em><strong>This allowed us to only label entire raw images rather than thousands of chipped image tiles.</strong></em></p></li>
+</ul>
+</div>
+<div class="section" id="json-min-to-tif-mask-from-labelstudio">
+<h3>JSON_MIN to TIF Mask (from LabelStudio)<a class="headerlink" href="#json-min-to-tif-mask-from-labelstudio" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In order to split the raw images and the labels together, we first needed to export the labels from our annotation tool, Label Studio. We then needed to transform the labels from JSON to TIFF formats in order to perform the image chipping. To do so, we created a function that transforms the JSON labels into a binary mask, and then saves it as a TIFF. The function first creates an array of zeros with the same dimensions as the raw image. Then, it uses the skimage.draw package to change the coordinates of the labels in the zero array to ones.</p></li>
+</ul>
+<p><img alt="raw_planet" src="../../_images/raw_planet.jpg" />
+<img alt="labeled_planet" src="../../_images/labeled_planet.jpg" /></p>
+</div>
+</div>
+<div class="section" id="looking-forward">
+<h2>Looking forward:<a class="headerlink" href="#looking-forward" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In the next month, we plan to finally train the U-NET model on the dataset that we created from the images that we have labeled and augmented. This will allow us to evaluate how well our model performed and what else we need to do to tweak it. We also want to consider how well the model will perform with images of the same pivots at different points in time. We also want to make sure that our dataset and data pipeline is open-source so we plan to upload our data and model on <a class="reference external" href="https://www.radiant.earth/">Radiant Earth</a>, which is a cloud-based open library dedicated to Earth observation training data for use with machine learning algorithms.</p></li>
+<li><p>Our end goal is to create a trained model for more generalized detection of center pivots. To do this, we want to train the pre-built UNET model on the datasets that we created through our data pipeline. If we have time, we may try to build our own U-NET model from the ground up, or try to implement another computer vision model (Mask RCNN, etc).</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./projects/eri"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="update2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Update 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../evidation_eric/description.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">evidation (Eric’s team)</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By UCSB DS Capstone Class<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRI Group Update 3 &#8212; Data Science Capstone 2022</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="PwC" href="../pwc/description.html" />
+    <link rel="prev" title="Team Information" href="update2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-186739861-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Science Capstone 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../class/syllabus.html">
+   Course Syllabus
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_readings.html">
+     Readings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_participation.html">
+     Meetings and participation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_deliverables.html">
+     Deliverables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_policies.html">
+     Course policies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/contacts.html">
+   Project sponsors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/software-tools.html">
+   Software and Tools
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../class/progress-update-guidelines.html">
+   Progress update guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-initial-post-guidelines.html">
+     Initial post (due Friday 2/4)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-second-post-guidelines.html">
+     Second post (due Friday 3/4)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-third-post-guidelines.html">
+     Third post (due Friday 4/29)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/progress-update-posting-instructions.html">
+     How to post project updates
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/presentation-guidelines-winter.html">
+   Interim presentation guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/presentation-guidelines-midquarter-spring.html">
+   Mid-quarter presentations
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../allthenticate/description.html">
+   Allthenticate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update1.html">
+     Project Update 1 (2/4/2022)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update2.html">
+     Project Update 2 (3/4/2022)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../allthenticate/update3.html">
+     Project Update 3 (5/2/2022)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../appfolio/description.html">
+   AppFolio
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update1.html">
+     Starting the Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update2.html">
+     Creating a Simple Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update3.html">
+     Implementing Hybrid Models and Image Features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../calcofi/description.html">
+   CalCOFI Project
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update1.html">
+     CalCOFI Initial Progress and Goal Definition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update2.html">
+     Progress Update and Reflection
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi/calcofi-update3.html">
+     The Final Stretch
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../carpedata/description.html">
+   carpedata
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update1.html">
+     Update 1 - (2/4/22)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update2.html">
+     Update 2 - (3/4/22)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update3.html">
+     Update 3 - (4/29/22)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ccber/description.html">
+   ccber
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../cits/description.html">
+   cits
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update2.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update3.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../envent/description.html">
+   ENVENT Lab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate1.html">
+     Survey Pre-Processing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate2.html">
+     Update 2: Moving Towards Megapoll Assembly
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../envent/projectupdate3.html">
+     Update 3: Merging Demographics and Exploring Modeling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../eri/description.html">
+   eri
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../eri/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../eri/update2.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../eri/update3.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../evidation_eric/description.html">
+   evidation (Eric’s team)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update1.html">
+     Evidation Health Project Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update2.html">
+     Evidation Health Project Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_eric/update3.html">
+     Evidation Health Project Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../evidation_julio/description.html">
+   Evidation (Julio’s team)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/Update2_4_22.html">
+     Evidation Update (Julio’s team)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/Update2.html">
+     Evidation Update #2 (Julio’s Team)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation_julio/update3.html">
+     Evidation Julio Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../hg_insights/description.html">
+   hg_insights
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../hg_insights/HG_Update1_Feb7.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../hg_insights/update%202-2.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../hg_insights/update%203.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="description.html">
+   NRI
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
+     NRI Group Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="update2.html">
+     Team Information
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     NRI Group Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../pwc/description.html">
+   PwC
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pwc/Update_1.html">
+     Update 1: Preliminaries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../pwc/Update_2.html">
+     Update 2: First Dive into Compression
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../sprague/description.html">
+   sprague
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_01.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_02.html">
+     Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sprague/Sprague_group_update_03.html">
+     Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/projects/nri/update3.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/nri/update3.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/projects/nri/update3.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   NRI Group Update 3
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-efforts">
+   Current Efforts
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#findings">
+   Findings
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#future-work">
+   Future Work
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>NRI Group Update 3</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   NRI Group Update 3
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-efforts">
+   Current Efforts
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#findings">
+   Findings
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#future-work">
+   Future Work
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="nri-group-update-3">
+<h1>NRI Group Update 3<a class="headerlink" href="#nri-group-update-3" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="current-efforts">
+<h1>Current Efforts<a class="headerlink" href="#current-efforts" title="Permalink to this headline">¶</a></h1>
+<p>In the past month we have spent a lot of our time performing different statistical methods on our data. Primarily we started off by using sctransform to normalize our data in order to recover sharper biological distinction compared to log-normalization. After doing so we performed dimensionality reduction by PCA and UMAP embedding as mentioned in update 2.
+During week 2 and week 3, we revised our manual cell type identification last quarter and explored beyond our original plan of manual annotation. We utilized tools like <a class="reference external" href="https://bioconductor.org/packages/release/bioc/html/SingleR.html">SingleR</a> and <a class="reference external" href="http://session.asuscomm.com/">ScType</a> to automatically annotate cell types. Though these results confirmed the correctness of our results, we still chose to utilize the manual result because the automatic cell types are too broad to have further inference. We sent our manual annotation results to the kosik lab and obtained the verified final result.</p>
+<img width="566" alt="manual cell type annotation result" src="https://user-images.githubusercontent.com/76935431/165864509-8043b433-1a56-4167-8497-32fdca5c0b31.png">
+<p>Then, we continued by performing differential expression tests on our data. We tested differential expression between the mutant and the control(wildtype) cell groups, specifically the 337VM, 406RW, and 406WW mutations. We first performed DE on All Wildtype Cells vs. All Mutant Cells (“406RW”, “337VM”, “406WW”) by the default Wilcox Rank Sum Test and MAST method. The Wilcox method is a non-parametric test that compares the ranks of expression values between two groups. The <a class="reference external" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0844-5">MAST</a> method is specifically developed for single cell RNA-seq DE analysis and it takes not only into account the expression value, but also the detection rate. In addition, considering the test performance and robustness indicated by paper <a class="reference external" href="https://www.nature.com/articles/nmeth.4612">Bias, robustness and scalability in single-cell differential expression analysis</a>, we decided to use MAST for both all-line comparisons and later single line DE comparisons.</p>
+<img width="901" alt="Mutant vs  Control Cells" src="https://user-images.githubusercontent.com/76935431/165862631-cd6dab24-1dcb-4fca-9d70-0f3eb78d8b48.png">
+The 337VM mutation is a 3 line mutation, 406RW is a 2 line mutation and 406WW is a 1 line mutation. The number of lines refers to how many different donors were sampled with the particular mutation. Because the 1-line mutation did not have a corresponding control line, we ignored it for individual line analysis. 
+</div>
+<div class="section" id="findings">
+<h1>Findings<a class="headerlink" href="#findings" title="Permalink to this headline">¶</a></h1>
+<p>Finding ontology differences between control and mutant cell lines through enrichment analysis on differentially expressed genes yielded some interesting results.
+We found that looking at an individual mutation and its control yielded the most interesting ontologies, particularly for the 406 mutation. Perhaps this is because differences between cell lines (taken from different donors) could overpower differences between our variable of interest, control vs. mutant.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><img alt="two_line_upreg.png" src="../../_images/two_line_upreg.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><em>Ontologies upregulated in 406 mutation vs control</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Generally, ontology analyses yielded a mix of interesting and seemingly irrelevant results. Key ontologies upregulated in in the mutant line were <strong>neuron projection development</strong>, <strong>Parkinson disease</strong>, <strong>regulation of nervous system development</strong>, <strong>positive regulation of neuron death</strong>, and <strong>negative regulation of microtubule polymerization or depolymerization</strong>. The The tauopathies we are studying are closely tied to Alzhiemer’s and other neurodegenerative diseases, but is not closely linked to Parkinson’s, so that ontology is an interesting result. Overall, it is encouraging that many ontologies associated with neurodegeneration (neuron death, etc) are present. Upregulation of negative regulation of microtubule polymerization or depolymerization also reflects the current literature; the leading proposed mechanism of taupathy is neurofibrillary tangles caused by malformed tau proteins, which disrupt microtubule formation (polymerization) and can cause them to dissociate (depolymerization). Microtubules are key to cell structure as well as intracellular transport, and affect many key functions in neurons. This can explain the wide range of observed effects of the mutation.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><img alt="two_line_downreg.png" src="../../_images/two_line_downreg.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><em>Ontologies downregulated in 406 mutation vs control</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Downreguled ontologies had equally interesting results. Ribosomes, which are organelles that produce proteins (translation) appear to be downregulated. <strong>Positive regulation of translation</strong> is also downregulated. This all points to a picture of the mutation, perhaps indirectly, reducing the formation of new proteins in brain cells, which could trigger wide-ranging consequences. This finding was first proposed in a <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4719006/">paper</a> in 2016.</p>
+<p>We also wanted to use our clustering results to see how the mutation affects gene expression associated with different types of cells.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><img alt="two_line_upreg_featureplot.png " src="../../_images/two_line_downreg_featureplot.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><em>Average cell expression of genes downregulated in mutant line</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Downregulation seems to most occur in Astrocytes and Radial Glia, and less so in neurons. These are key structural cells in the brain, so it’s possible that microtubule disruption impacts them in particular.</p>
+</div>
+<div class="section" id="future-work">
+<h1>Future Work<a class="headerlink" href="#future-work" title="Permalink to this headline">¶</a></h1>
+<p>We have broken up our future on a week by week basis in order to keep ourselves accountable and have concrete deadlines for ourselves.</p>
+<ul class="simple">
+<li><p>Week 5:</p>
+<ul>
+<li><p>We will finish working with Differential Expression Analysis</p></li>
+<li><p>We will introduce Monocle3 to identify differences in spatiotemporal (time of cell and location of cells) relationships between genes in mutant and control cells</p>
+<ul>
+<li><p><a class="reference external" href="https://cole-trapnell-lab.github.io/monocle3/">Monocle3</a> can help you perform three main types of analysis:</p>
+<ul>
+<li><p>Clustering, classifying, and counting cells. Single-cell RNA-Seq experiments allow you to discover new (and possibly rare) subtypes of cells. Monocle 3 helps you identify them.</p></li>
+<li><p>Constructing single-cell trajectories. In development, disease, and throughout life, cells transition from one state to another. Monocle 3 helps you discover these transitions.</p></li>
+<li><p>Differential expression analysis. Characterizing new cell types and states begins with comparisons to other, better understood cells. Monocle 3 includes a sophisticated, but easy-to-use system for differential expression.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Week 6:</p>
+<ul>
+<li><p>We will wrap up Monocole3 trajectory analysis</p></li>
+<li><p>We will introduce WGCNA</p>
+<ul>
+<li><p><a class="reference external" href="https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/">Weighted correlation network analysis (WGCNA)</a> can be used for finding clusters (modules) of highly correlated genes, for summarizing such clusters using the module eigengene or an intramodular hub gene, for relating modules to one another and to external sample traits (using eigengene network methodology), and for calculating module membership measures.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Week 7:</p>
+<ul>
+<li><p>We will continue working with WGCNA</p></li>
+</ul>
+</li>
+<li><p>Week 8:</p>
+<ul>
+<li><p>We will wrap up with WGCNA and revise our final presentation</p></li>
+</ul>
+</li>
+<li><p>Week 9/10:</p>
+<ul>
+<li><p>Wrap up everything</p>
+<ul>
+<li><p>look at all the results we have from DE, Metascape, Monocle3, WGCNA</p></li>
+</ul>
+</li>
+<li><p>Start finalizing presentation and poster</p></li>
+<li><p>Practice for presentation</p></li>
+</ul>
+</li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./projects/nri"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="update2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Team Information</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../pwc/description.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PwC</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By UCSB DS Capstone Class<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
